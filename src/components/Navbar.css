@@ -1,0 +1,23 @@
+/* src/components/Navbar.css */
+.navbar {
+  background-color: purple; /* Set your desired background color */
+  margin-bottom: 10px; /* Add margin at the bottom to create a gap */
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.nav-links {
+  margin-left: auto;
+}
+
+.nav-links a {
+  color: white; /* Set your desired text color */
+  text-decoration: none; /* Remove default underline */
+  margin: 0 10px; /* Adjust spacing between links */
+}
+
+.nav-links a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}

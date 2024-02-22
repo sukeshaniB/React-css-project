@@ -1,0 +1,36 @@
+/* src/components/Footer.css */
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .info-section {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .info-section h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-social {
+    flex: 1;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  

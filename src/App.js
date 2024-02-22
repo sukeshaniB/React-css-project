@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Carousel from './components/Carousel';
+import ProductGrid from './components/ProductCard';
+import Footer from './components/Footer';
+import Carousel1 from './components/Carousel1';
+import ProductGrid1 from './components/ProductCard1';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        {/* Navbar */}
+        <Navbar />
+
+        {/* First Carousel */}
+        <Carousel />
+
+        {/* First Product Grid with gap */}
+        <div style={{ marginTop: '60px' }}>
+          <ProductGrid rows={3} cols={3} />
+        </div>
+
+        {/* Second Carousel */}
+        <Carousel1 />
+
+        {/* Second Product Grid */}
+        <ProductGrid1 rows={3} cols={3} />
+
+        {/* Footer */}
+        <Footer />
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
